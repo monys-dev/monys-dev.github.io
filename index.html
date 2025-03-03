@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./favicon.svg">
+    <meta name="description" content="Desenvolvedor FullStack e UX/UI Designer, Localizado em Belo Horizonte">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="./js/animatescroll.js"></script>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container-logo">
+            <img class="logo" src="./imagens/Monys.svg" alt="" width="138.49" height="44.98">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href=""
+                        onclick="$('#experiencia').animatescroll({scrollSpeed:600,easing:'easeInSine', padding:40});">Experiência</a>
+                </li>
+                <li><a href=""
+                        onclick="$('#formacao').animatescroll({scrollSpeed:600,easing:'easeInSine'});">Formação</a>
+                </li>
+                <li><a href=""
+                        onclick="$('#contato').animatescroll({scrollSpeed:600,easing:'easeInSine', padding:40});">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="introducao" id="introducao" aria-label="Introdução">
+            <div class="container">
+                <img class="perfil" src="./imagens/Foto-Ramonys.jpg" alt="Perfil Ramonys Santos" width="400"
+                    height="556">
+
+                <div class="introducao-textos">
+                    <h1 class="introducao-titulo"> Desenvolvedor <br> FullStack & <br> UX/UI Design</h1>
+                    <p class=" introducao-descricao">Ramonys Santos, residente em Belo Horizonte 🌤️️</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experiencia" id="experiencia" aria-label="Experiência">
+            <div class="container">
+                <h2 class="experiencia-titulo">EXPERIÊNCIA</h2>
+
+                <div class="experiencia-textos">
+                    <p class="experiencia-descricao">Desenvolvo projetos com <strong>HTML</strong>,
+                        <strong>CSS</strong> e <strong>JavaScript</strong>, aplicando conceitos avançados de
+                        <strong>UX
+                            Design</strong> e <strong>UI Design</strong> no desenvolvimento de sistemas web e
+                        sites
+                        como este.
+                    </p>
+
+                    <ul class="empresa-lista">
+                        <li class="empresa">
+                            <span class="empresa-ano">2020-25</span>
+                            <h3 class="empresa-nome">Belas Artes & Imaginartes</h3>
+                            <h4 class="empresa-cargo">Diretor de Marketing</h4>
+                            <p class="empresa-descricao">Planejar, gerenciar e analisar estratégias de marketing para
+                                eventos artesanais, incluindo tráfego pago, com mais de 1.3 milhões investidos,
+                                gerando milhares de leads e alta receita mensal.</p>
+                            <ul class="empresa-habilidade">
+                                <li>Design Gráfico</li>
+                                <li>Tráfego Pago</li>
+                                <li>Estratégias de Marketing & Vendas </li>
+                            </ul>
+                        </li>
+
+                        <li class="empresa">
+                            <span class="empresa-ano">2024-25</span>
+                            <h3 class="empresa-nome">Luah Semijoias</h3>
+                            <h4 class="empresa-cargo">Gestor de Tráfego Pago</h4>
+                            <p class="empresa-descricao">A Luah Semijoias atua com vendas em consignado, atacado e
+                                varejo.
+                                Com campanhas de tráfego pago e uma equipe de atendimento eficiente, atingimos a meta de
+                                vendas e revendedoras por vários meses.</p>
+                            <ul class="empresa-habilidade">
+                                <li>Tráfego Pago</li>
+                                <li>Gestão de Metas</li>
+                                <li>Prospecção de Clientes</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="formacao" id="formacao" aria-label="Formação">
+            <div class="container">
+                <h2 class="formacao-titulo">FORMAÇÃO</h2>
+                <div class="formacao-textos">
+                    <p class="formacao-descricao">Minha experiência acadêmica é o <strong>bacharelado</strong> 🎓 que
+                        estou fazendo em
+                        <strong>Ciência da Computação</strong>. Além disso me mantenho sempre atualizado com cursos
+                        intensivos online.
+                    </p>
+
+                    <ul class="faculdade-lista">
+
+                        <li class="faculdade">
+                            <span class="faculdade-tipo">CURSOS INTENSIVOS</span>
+                            <h3 class="faculdade-curso">UX & UI Design
+                                Avançado</h3>
+                            <p class="faculdade-data">2024-25</p>
+                        </li>
+
+                        <li class="faculdade">
+                            <span class="faculdade-tipo">CURSOS INTENSIVOS</span>
+                            <h3 class="faculdade-curso">HTML, CSS
+                                e JavaSript</h3>
+                            <p class="faculdade-data">2024-25</p>
+                        </li>
+
+                        <li class="faculdade">
+                            <span class="faculdade-tipo">BACHAREL</span>
+                            <h3 class="faculdade-curso">Ciência da Computação</h3>
+                            <p class="faculdade-data">2023-27</p>
+                        </li>
+
+                    </ul>
+
+                    <ul class="curso-idioma-lista">
+                        <li class="curso-idioma">
+                            <div class="container-icone">
+                                <img class="icone" src="./imagens/cursos.svg" alt="" width="24" height="24">
+                            </div>
+                            <h3 class="curso-idioma-titulo">CURSOS INTENSIVOS</h3>
+                            <p class="curso-idioma-nome">UX Design & UI Design <span class="info">40h</span></p>
+                            <p class="curso-idioma-nome">HTML, CSS e JavaScript Completo <span class="info">77h</span>
+                            </p>
+                            <p class="curso-idioma-nome">Tipografia Avançada <span class="info">12h</span></p>
+                        </li>
+                        <li class="curso-idioma">
+                            <div class="container-icone">
+                                <img class="icone" src="./imagens/idiomas.svg" alt="" width="24" height="24">
+                            </div>
+                            <h3 class="curso-idioma-titulo">IDIOMAS</h3>
+                            <p class="curso-idioma-nome">Inglês <span class="info">/ Intermediário</span></p>
+                            <p class="curso-idioma-nome">Espanhol <span class="info">/ Iniciante</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato" aria-label="Contato">
+        <div class="container" id="contato">
+            <p class="footer-descricao">Estou disponível para novos projetos no momento. Entre em contato comigo e
+                marcamos uma conversa 👋</p>
+            <ul class="lista-links">
+                <li class="link">Ramonys.contato@gmail.com</li>
+                <li class="link"><a class="contato" href="https://wa.me/5531994809004">+55 31 9 9480-9004</a></li>
+                <li class="link"><a class="contato" href="https://www.linkedin.com/in/ramonys-santos">Acesse meu
+                        Linkedin</a></li>
+            </ul>
+            <span class="copy">Monys. Alguns direitos reservados.</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

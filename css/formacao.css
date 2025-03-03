@@ -1,0 +1,157 @@
+.formacao {
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: var(--c13);
+  padding: var(--s13) 0;
+}
+
+.formacao-titulo {
+  color: var(--b);
+  align-self: start;
+}
+
+.formacao-descricao {
+  color: var(--c6);
+  font-size: var(--s06);
+  line-height: var(--s07);
+  max-width: 45ch;
+}
+
+.formacao-descricao strong {
+  color: var(--w);
+}
+
+.formacao-textos {
+  display: grid;
+  gap: var(--s11);
+}
+
+.faculdade-lista {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s09);
+}
+
+.faculdade {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--b);
+  border-radius: var(--s01);
+  padding: var(--s05);
+}
+
+.faculdade-tipo {
+  color: var(--c6);
+  font-size: 0.875rem;
+  line-height: var(--s04);
+  margin-bottom: var(--s03);
+}
+
+.faculdade-curso {
+  flex: 1;
+  color: var(--w);
+  font-size: 1.125rem;
+  line-height: var(--s06);
+  font-weight: bold;
+  margin-bottom: var(--s09);
+  position: relative;
+}
+
+.faculdade-curso::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background-image: var(--gradient);
+  position: absolute;
+  left: -24px;
+}
+
+.faculdade-data {
+  color: var(--c6);
+  font-size: 1.125rem;
+  line-height: var(--s06);
+}
+
+.curso-idioma {
+  padding: var(--s05);
+  border: var(--b) solid 1px;
+  border-radius: var(--s01);
+  position: relative;
+}
+
+.curso-idioma:not(:first-child) {
+  margin-top: var(--s09);
+}
+
+.container-icone {
+  position: absolute;
+  width: 44px;
+  height: 34px;
+  background-color: var(--b);
+  border-radius: var(--s01) 0 0 var(--s01);
+  left: -44px;
+  top: 12px;
+}
+
+.icone {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.curso-idioma-titulo {
+  color: var(--c6);
+  margin-bottom: var(--s09);
+  position: relative;
+}
+
+.curso-idioma-nome {
+  color: var(--w);
+  font-size: 1.125rem;
+}
+
+.curso-idioma:first-child .curso-idioma-nome {
+  display: flex;
+  justify-content: space-between;
+}
+
+.curso-idioma-nome:not(:first-of-type) {
+  margin-top: var(--s05);
+}
+
+.info {
+  color: var(--c6);
+}
+
+@media (max-width: 500px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+    max-width: 520px;
+    justify-content: center;
+  }
+
+  .formacao-titulo {
+    color: var(--w);
+    font-size: var(--s07);
+    line-height: var(--s07);
+  }
+
+  .formacao-descricao {
+    font-size: var(--s04);
+    line-height: var(--s05);
+    max-width: initial;
+  }
+
+  .container-icone {
+    position: initial;
+    margin-bottom: var(--s03);
+    background-color: transparent;
+  }
+
+  .icone {
+    position: initial;
+  }
+}
