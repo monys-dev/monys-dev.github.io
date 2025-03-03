@@ -38,6 +38,10 @@
     max-width: var(--max-content-tablet);
   }
 
+  .menu a::before {
+    display: none;
+  }
+
   .menu a:hover::before {
     display: none;
   }
